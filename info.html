@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Arabic Bangla Qur'an</title>
+<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8">
+    function onLoad() {
+    	document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    </script>
+<style>
+@font-face{font-family:bangla;
+src: url('data/font/SutonnyMJ.ttf')}
+body{background:url(data/icon/surainfobg.png);background-size:100% 100%;margin:0;}
+table{font-family:bangla;font-size:large;position:relative;top:-30px;line-height:25px;}
+.left{width:50%;text-align:right;color:green;font-weight:bold;}
+.middle{color:red;font-weight:bold;}
+.right{width:50%;text-align:left;color:blue;}
+* {
+     user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+::selection { background: transparent;color:inherit; }
+::-moz-selection { background: transparent;color:inherit; }
+</style>
+<script>
+info = [
+//[index, para, ayas, start, order, ruku, "sijdaayas", 'sijda', "name", 'type"]
+[01,01,07,0,5,1,"",'‡bB',"dvwZnv",'gv°x m~iv'],
+[02,01,286,7,87,40,"",'‡bB',"evKvivn&",'gv`vbx m~iv'],
+[03,03,200,293,89,20,"",'‡bB',"Av‡j-Bgivb",'gv`vbx m~iv'],
+[04,04,176,493,92,24,"",'‡bB',"wbmv",'gv`vbx m~iv'],
+[05,06,120,669,112,16,"",'‡bB',"gvwq`v",'gv`vbx m~iv'],
+[06,07,165,789,55,20,"",'‡bB',"AvbAvg",'gv°x m~iv'],
+[07,08,206,954,39,24,"206",'Av‡Q',"AvÕivd",'gv°x m~iv'],
+[08,09,75,1160,88,10,"",'‡bB',"Avbdvj",'gv`vbx m~iv'],
+[09,10,129,1235,113,16,"",'‡bB',"ZvIev",'gv`vbx m~iv'],
+[10,11,109,1364,51,11,"",'‡bB',"BDbym",'gv°x m~iv'],
+[11,11,123,1473,52,10,"",'‡bB',"û`",'gv°x m~iv'],
+[12,12,111,1596,53,12,"",'‡bB',"BDmyd",'gv°x m~iv'],
+[13,13,43,1707,96,6,"15",'Av‡Q',"ivÕ`",'gv`vbx m~iv'],
+[14,13,52,1750,72,7,"",'‡bB',"Beivnxg",'gv°x m~iv'],
+[15,13,99,1802,54,6,"",'‡bB',"wnRi",'gv°x m~iv'],
+[16,14,128,1901,70,16,"50",'Av‡Q',"bvnj",'gv°x m~iv'],
+[17,15,111,2029,50,12,"107",'Av‡Q',"ebx BmivCj",'gv°x m~iv'],
+[18,15,110,2140,69,12,"",'‡bB',"Kvn&d",'gv°x m~iv'],
+[19,16,98,2250,44,6,"58",'Av‡Q',"gviBqvg",'gv°x m~iv'],
+[20,16,135,2348,45,8,"",'‡bB',"Z¡v-nv",'gv°x m~iv'],
+[21,17,112,2483,73,7,"",'‡bB',"Avw¤^qv",'gv°x m~iv'],
+[22,17,78,2595,103,10,"18",'Av‡Q',"nv¾",'gv`vbx m~iv'],
+[23,18,118,2673,74,6,"",'‡bB',"gyÕwgbyb",'gv°x m~iv'],
+[24,18,64,2791,102,9,"",'‡bB',"b~i",'gv`vbx m~iv'],
+[25,18,77,2855,42,6,"60",'Av‡Q',"dziKvb",'gv°x m~iv'],
+[26,19,227,2932,47,11,"",'‡bB',"ïAviv",'gv°x m~iv'],
+[27,19,93,3159,48,7,"25",'Av‡Q',"bvgj",'gv°x m~iv'],
+[28,20,88,3252,49,8,"",'‡bB',"K¡vmvm",'gv°x m~iv'],
+[29,20,69,3340,85,7,"",'‡bB',"AvbKve~Z",'gv°x m~iv'],
+[30,21,60,3409,84,6,"",'‡bB',"iƒg",'gv°x m~iv'],
+[31,21,34,3469,57,3,"",'‡bB',"jyKgvb",'gv°x m~iv'],
+[32,21,30,3503,75,3,"15",'Av‡Q',"mvR&`v",'gv°x m~iv'],
+[33,21,73,3533,90,9,"",'‡bB',"Avn&hve",'gv`vbx m~iv'],
+[34,22,54,3606,58,6,"",'‡bB',"mvev",'gv°x m~iv'],
+[35,22,45,3660,43,5,"",'‡bB',"dvwZi",'gv°x m~iv'],
+[36,22,83,3705,41,5,"",'‡bB',"Bqvmxb",'gv°x m~iv'],
+[37,23,182,3788,56,5,"",'‡bB',"mvd&dvZ",'gv°x m~iv'],
+[38,23,88,3970,38,5,"24",'Av‡Q',"mv`",'gv°x m~iv'],
+[39,23,75,4058,59,8,"",'‡bB',"hygvi",'gv°x m~iv'],
+[40,24,85,4133,60,9,"",'‡bB',"gyÕwgb",'gv°x m~iv'],
+[41,24,54,4218,61,6,"38",'Av‡Q',"nv-gxg Avm-mvR&`v",'gv°x m~iv'],
+[42,25,53,4272,62,5,"",'‡bB',"k~iv",'gv°x m~iv'],
+[43,25,89,4325,63,7,"",'‡bB',"hyLiæd",'gv°x m~iv'],
+[44,25,59,4414,64,3,"",'‡bB',"`yLvb",'gv°x m~iv'],
+[45,25,37,4473,65,4,"",'‡bB',"Rvwmqv",'gv°x m~iv'],
+[46,26,35,4510,66,4,"",'‡bB',"Avn&Kvd",'gv°x m~iv'],
+[47,26,38,4545,95,4,"",'‡bB',"gynv¤§`",'gv`vbx m~iv'],
+[48,26,29,4583,111,4,"",'‡bB',"dvZ&n",'gv`vbx m~iv'],
+[49,26,18,4612,106,2,"",'‡bB',"ûRivZ",'gv`vbx m~iv'],
+[50,26,45,4630,34,3,"",'‡bB',"K¡vd",'gv°x m~iv'],
+[51,26,60,4675,67,3,"",'‡bB',"hvwiqvZ",'gv°x m~iv'],
+[52,27,49,4735,76,2,"",'‡bB',"Z~i",'gv°x m~iv'],
+[53,27,62,4784,23,3,"62",'Av‡Q',"bvR&g",'gv°x m~iv'],
+[54,27,55,4846,37,3,"",'‡bB',"K¡vgvi",'gv°x m~iv'],
+[55,27,78,4901,97,3,"",'‡bB',"in&gvb",'gv`vbx m~iv'],
+[56,27,96,4979,46,3,"",'‡bB',"IqvwKÕAv",'gv°x m~iv'],
+[57,27,29,5075,94,4,"",'‡bB',"nv`x`",'gv`vbx m~iv'],
+[58,28,22,5104,105,3,"",'‡bB',"gyRv`vjv",'gv`vbx m~iv'],
+[59,28,24,5126,101,3,"",'‡bB',"nvk&i",'gv`vbx m~iv'],
+[60,28,13,5150,91,2,"",'‡bB',"gygZvwnbvn",'gv`vbx m~iv'],
+[61,28,14,5163,109,2,"",'‡bB',"mvd&d",'gv`vbx m~iv'],
+[62,28,11,5177,110,2,"",'‡bB',"RygyÕAv",'gv`vbx m~iv'],
+[63,28,11,5188,104,2,"",'‡bB',"gybvwdKzb",'gv`vbx m~iv'],
+[64,28,18,5199,108,2,"",'‡bB',"ZvMveyb",'gv`vbx m~iv'],
+[65,28,12,5217,99,2,"",'‡bB',"ZvjvK",'gv`vbx m~iv'],
+[66,28,12,5229,107,2,"",'‡bB',"Zvnixg",'gv`vbx m~iv'],
+[67,29,30,5241,77,2,"",'‡bB',"gyj&K",'gv°x m~iv'],
+[68,29,52,5271,2,2,"",'‡bB',"K¡vjvg",'gv°x m~iv'],
+[69,29,52,5323,78,2,"",'‡bB',"nv°v",'gv°x m~iv'],
+[70,29,44,5375,79,2,"",'‡bB',"gvÔAvwiR",'gv°x m~iv'],
+[71,29,28,5419,71,2,"",'‡bB',"b~n",'gv°x m~iv'],
+[72,29,28,5447,40,2,"",'‡bB',"wRb",'gv°x m~iv'],
+[73,29,20,5475,3,2,"",'‡bB',"gyh&hvw¤§j",'gv°x m~iv'],
+[74,29,56,5495,4,2,"",'‡bB',"gyÏvQ&wQi",'gv°x m~iv'],
+[75,29,40,5551,31,2,"",'‡bB',"wKqvgvn",'gv°x m~iv'],
+[76,29,31,5591,98,2,"",'‡bB',"`vn&i/Bbmvb",'gv`vbx m~iv'],
+[77,29,50,5622,33,2,"",'‡bB',"gyimvjvZ",'gv°x m~iv'],
+[78,30,40,5672,80,2,"",'‡bB',"bvev",'gv°x m~iv'],
+[79,30,46,5712,81,2,"",'‡bB',"bvwhÕAvZ",'gv°x m~iv'],
+[80,30,42,5758,24,1,"",'‡bB',"Avevmv",'gv°x m~iv'],
+[81,30,29,5800,7,1,"",'‡bB',"ZvKexi",'gv°x m~iv'],
+[82,30,19,5829,82,1,"",'‡bB',"Bb&wdZvi",'gv°x m~iv'],
+[83,30,36,5848,86,1,"",'‡bB',"gyZvd&wddxb",'gv°x m~iv'],
+[84,30,25,5884,83,1,"21",'Av‡Q',"BbwkK¡vK",'gv°x m~iv'],
+[85,30,22,5909,27,1,"",'‡bB',"eyiæR",'gv°x m~iv'],
+[86,30,17,5931,36,1,"",'‡bB',"ZvwiK",'gv°x m~iv'],
+[87,30,19,5948,8,1,"",'‡bB',"AvÕjv",'gv°x m~iv'],
+[88,30,26,5967,68,1,"",'‡bB',"Mvwkqv",'gv°x m~iv'],
+[89,30,30,5993,10,1,"",'‡bB',"dvR&i",'gv°x m~iv'],
+[90,30,20,6023,35,1,"",'‡bB',"evjv`",'gv°x m~iv'],
+[91,30,15,6043,26,1,"",'‡bB',"kvg&m",'gv°x m~iv'],
+[92,30,21,6058,9,1,"",'‡bB',"jvBj",'gv°x m~iv'],
+[93,30,11,6079,11,1,"",'‡bB',"`ynv",'gv°x m~iv'],
+[94,30,8,6090,12,1,"",'‡bB',"Bbwkivn&",'gv°x m~iv'],
+[95,30,8,6098,28,1,"",'‡bB',"Z¡xb",'gv°x m~iv'],
+[96,30,19,6106,1,1,"19",'Av‡Q',"AvjvK¡",'gv°x m~iv'],
+[97,30,5,6125,25,1,"",'‡bB',"Kv`&i",'gv°x m~iv'],
+[98,30,8,6130,100,1,"",'‡bB',"evwq¨bvn",'gv`vbx m~iv'],
+[99,30,8,6138,93,1,"",'‡bB',"whj&hvj",'gv`vbx m~iv'],
+[100,30,11,6146,14,1,"",'‡bB',"Avw`qvZ",'gv°x m~iv'],
+[101,30,11,6157,30,1,"",'‡bB',"K¡vwiÕAv",'gv°x m~iv'],
+[102,30,8,6168,16,1,"",'‡bB',"ZvKvQzi",'gv°x m~iv'],
+[103,30,3,6176,13,1,"",'‡bB',"Avm&i",'gv°x m~iv'],
+[104,30,9,6179,32,1,"",'‡bB',"ûgvhvn",'gv°x m~iv'],
+[105,30,5,6188,19,1,"",'‡bB',"dxj",'gv°x m~iv'],
+[106,30,4,6193,29,1,"",'‡bB',"KzivBk",'gv°x m~iv'],
+[107,30,7,6197,17,1,"",'‡bB',"gvDb",'gv°x m~iv'],
+[108,30,3,6204,15,1,"",'‡bB',"KvIQvi",'gv°x m~iv'],
+[109,30,6,6207,18,1,"",'‡bB',"Kvwdiƒb",'gv°x m~iv'],
+[110,30,3,6213,114,1,"",'‡bB',"bvm&i",'gv`vbx m~iv'],
+[111,30,5,6216,6,1,"",'‡bB',"jvnve",'gv°x m~iv'],
+[112,30,4,6221,22,1,"",'‡bB',"BL&jvm",'gv°x m~iv'],
+[113,30,5,6225,20,1,"",'‡bB',"dvjvK",'gv°x m~iv'],
+[114,30,6,66230,21,1,"",'‡bB',"bvm",'gv°x m~iv']
+];
+</script>
+<script>
+var suraname=["dvwZnv","evKvivn&","Av‡j-Bgivb","wbmv","gvwq`v","AvbAvg","AvÕivd","Avbdvj","ZvIev","BDbym","û`","BDmyd","ivÕ`","Beivnxg","wnRi","bvnj","ebx BmivCj","Kvn&d","gviBqvg","Z¡v-nv","Avw¤^qv","nv¾","gyÕwgbyb","b~i","dziKvb","ïAviv","bvgj","K¡vmvm","AvbKve~Z","iƒg","jyKgvb","mvR&`v","Avn&hve","mvev","dvwZi","Bqvmxb","mvd&dvZ","mv`","hygvi","gyÕwgb","nv-gxg Avm-mvR&`v","k~iv","hyLiæd","`yLvb","Rvwmqv","Avn&Kvd","gynv¤§`","dvZ&n","ûRivZ","K¡vd","hvwiqvZ","Z~i","bvR&g","K¡vgvi","in&gvb","IqvwKÕAv","nv`x`","gyRv`vjv","nvk&i","gygZvwnbvn","mvd&d","RygyÕAv","gybvwdKzb","ZvMveyb","ZvjvK","Zvnixg","gyj&K","K¡vjvg","nv°v","gvÔAvwiR","b~n","wRb","gyh&hvw¤§j","gyÏvQ&wQi","wKqvgvn","`vn&i/Bbmvb","gyimvjvZ","bvev","bvwhÕAvZ","Avevmv","ZvKexi","Bb&wdZvi","gyZvd&wddxb","BbwkK¡vK","eyiæR","ZvwiK","AvÕjv","Mvwkqv","dvR&i","evjv`","kvg&m","jvBj","`ynv","Bbwkivn&","Z¡xb","AvjvK¡","Kv`&i","evwq¨bvn","whj&hvj","Avw`qvZ","K¡vwiÕAv","ZvKvQzi","Avm&i","ûgvhvn","dxj","KzivBk","gvDb","KvIQvi","Kvwdiƒb","bvm&i","jvnve","BL&jvm","dvjvK","bvm"];
+	function GetUrlValue(VarSearch){
+		var SearchString = window.location.search.substring(1);
+		var VariableArray = SearchString.split('&');
+		for(var i = 0; i < VariableArray.length; i++){
+			var KeyValuePair = VariableArray[i].split('=');
+			if(KeyValuePair[0] == VarSearch){
+				return KeyValuePair[1];
+	}}};
+	name = GetUrlValue('sura');
+	name = name-1;
+</script>
+</head>
+<body onload="onLoad()">
+<img src="data/icon/surainfobgtop.png" width="100%">
+<table border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr><td class='left'>m~ivi bvg</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='sname'></td></tr>
+<tr><td class='left'>m~ivi aiY</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='stype'></td></tr>
+<tr><td class='left'>cviv</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='spara'></td></tr>
+<tr><td class='left'>AvqvZ</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='sayas'></td></tr>
+<tr><td class='left'>iæKz</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='sruku'></td></tr>
+<tr><td class='left'>ïiæ</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='sstart'></td></tr>
+<tr><td class='left'>wmR`v</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='ssijda'></td></tr>
+<tr><td class='left'>wmR`vi AvqvZ</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='ssayas'></td></tr>
+<tr><td class='left'>myiv</td><td class='middle'>&nbsp;-&nbsp;</td><td class='right' id='sno'></td></tr>
+</table>
+<script>
+	document.getElementById('sno').innerHTML = info[name][0];
+	document.getElementById('spara').innerHTML = info[name][1];
+	document.getElementById('sayas').innerHTML = info[name][2];
+	document.getElementById('sstart').innerHTML = info[name][3];
+	document.getElementById('sruku').innerHTML = info[name][5];
+	document.getElementById('ssayas').innerHTML = info[name][6];
+	document.getElementById('ssijda').innerHTML = info[name][7];
+	document.getElementById('sname').innerHTML = info[name][8];
+	document.getElementById('stype').innerHTML = info[name][9];
+</script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+#header{
+	position:	absolute;
+	top:	0;
+	height:	51px;
+	width:	100%;
+	background-color:	#049A70;
+	border-bottom:	1px solid #52443C;
+}
+#header>.back{
+	background:	url('../data/icon/back.png') no-repeat center;
+	background-size:	30px;
+}
+#header>.title{
+	margin:	0;
+	padding:	0 2px;
+	line-height:	50px;
+	float:	left;
+	display:	inline-block;
+	color:	#AEDFD1;
+	font-family:	arial;
+}
+#header>#nav{
+	position:	absolute;
+	top:	0;
+	right:	0;
+	height:	50px;
+	background-color:	#049a70;
+}
+#header>#nav>.btn, #header>.btn, #header>#nav>.btn_clear{
+	height:	50px;
+	width:	50px;
+	display:	block;
+	border-left:1px solid #00A577;
+}
+#header>#nav>.btn_clear{
+	line-height:	50px;
+	padding:	0 10px;
+	font-size:	small;
+	color:	#AEDFD1;
+	text-align:	center;
+}
+#header>#nav>.btn, #header>.btn{
+	padding:	10px;
+}
+
+#header>.btn{
+	float:	left;
+}
+#header>#nav>.btn, #header>#nav>.btn_clear{
+	float:	right;
+}
+#header>#nav>.btn:active, #header>#nav>.btn_clear:active, #header>.back:active{
+	background-color:	#008D66;
+}
+#header>#nav>.menu{
+		background:	url('../data/icon/menu_l.png') no-repeat center;
+		background-size:	30px;
+}
+#menu, #dialog_overlay, #hold_overlay{
+	display:	none;
+	position:	fixed;
+	top:	0;
+	left:	0;
+	bottom:	0;
+	right:	0;
+	z-index:	0;
+	background:	url('../data/icon/menu_back.png') repeat center;
+}
+#menu_body{
+	display: none;
+	position:	absolute;
+	z-index:	1;
+	right:	30px;
+	top:	40px;
+	width:	200px;
+	background-color:	white;
+	box-shadow: 0px 0px 10px black;
+	border:	1px solid gray;
+	border-radius: 5px;
+	padding: 5px;
+}
+#menu_body li{
+	padding:	20px 20px;
+	font-weight:	bold;
+	font-family:	arial;
+	font-size: small;
+}
+#menu_body li:active{
+	background-color:	lightgray;
+}
+#dialog_confirm{
+	display: none;
+	position:	absolute;
+	z-index:	1;
+	top: 0;
+	left:	0;
+	bottom: 0;
+	right:	0;
+	background:	url('../data/icon/menu_back.png') repeat center;
+}
+#dialog_confirm>table{
+	padding:	0;
+	border:	0;
+	border-spacing:	0;
+	height:	100%;
+	width:	100%;
+}
+#dialog_confirm>table #confirm_box{
+	position:	relative;
+	z-index:	2;
+	margin:	auto;
+	width:	90%;
+	border-radius:	5px;
+	background-color:	white;
+	box-shadow: 0px 0px 15px #3F3F3F;
+}
+#dialog_confirm>table #confirm_box>.box_header{
+	height:	40px;
+	width:	100%;
+	border-bottom:	2px solid #049A70;
+}
+#dialog_confirm>table #confirm_box>.box_content{
+	width:	100%;
+	padding:	20px 10px;
+	font-family:	arial;
+}
+#dialog_confirm>table #confirm_box>.box_footer{
+	width:	100%;
+	display:	inline-block;
+}
+#dialog_confirm>table #confirm_box>.box_footer>.yes,	#dialog_confirm>table #confirm_box>.box_footer>.no{
+	height:	40px;
+	text-align:	center;
+	line-height:	40px;
+	font-family:	arial;
+}
+#dialog_confirm>table #confirm_box>.box_footer>.yes{
+	width:	50%;
+	float:	left;
+	border-bottom-left-radius: 5px;
+}
+#dialog_confirm>table #confirm_box>.box_footer>.no{
+	border-left:	1px solid #049A70;
+	width:	50%;
+	float:	right;
+	border-bottom-right-radius: 5px;
+}
+#dialog_confirm>table #confirm_box>.box_footer>.yes:active,	#dialog_confirm>table #confirm_box>.box_footer>.no:active{
+	background-color:	#049A70;
+}
+@media only screen and (min-width: 360px) {
+	#header{
+		height:	61px;
+	}
+	#header>#nav{
+		height:	60px;
+	}
+	#header>#nav>.btn, #header .btn, #header>#nav>.btn_clear{
+		height:	60px;
+		width:	60px;
+		line-height:	60px;
+	}
+	#header>.title{
+		line-height:	60px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	#header{
+		height:	66px;
+	}
+	#header>.title{
+		line-height:	65px;
+	}
+	#header>#nav{
+		height:	65px;
+	}
+	#header>#nav>.btn, #header .btn, #header>#nav>.btn_clear{
+		height:	65px;
+		width:	65px;
+		line-height:	65px;
+	}
+}
+
+@media only screen and (min-width: 560px) {
+	#header{
+		height:	71px;
+	}
+	#header>.title{
+		line-height:	70px;
+	}
+	#header>#nav{
+		height:	70px;
+	}
+	#header>#nav>.btn, #header .btn, #header>#nav>.btn_clear{
+		height:	70px;
+		width:	70px;
+		line-height:	70px;
+	}
+}
+
+

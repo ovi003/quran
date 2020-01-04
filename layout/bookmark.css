@@ -1,0 +1,178 @@
+body{
+	padding-top:	51px;
+}
+
+#turan{
+	position:	fixed;
+	z-index:	0;
+	top:	51px;
+	bottom:	0;
+	left:	0;
+	right:	0;
+	width:	100%;
+	overflow:	auto;
+	background-color:	#049a70;
+}
+ul>li>ul{display:	block;}
+.sura_title,	.sura_shortdetails{
+	display: block;
+	font-family: bangla;
+}
+.sura_title>.lone,	.sura_title>.ltwo,	.sura_shortdetails>.lone,	.sura_shortdetails>.ltwo,	.sura_shortdetails>.lthree{
+	margin: 0px;
+	position: absolute;
+}
+.sura_title>.lone,	.sura_shortdetails>.lone{
+	background:	url('../data/icon/shadow.png') repeat-y right;
+	background-color:	#F4E9D0;
+	float: left;
+}
+.sura_title>.ltwo{
+	left:	45px;
+	padding:	0 5px;
+}
+.sura_shortdetails>.ltwo{
+	left:	50px;
+	padding:	0 5px;
+}
+.sura_title>.ltwo{
+	background-color: #B0A896;
+	right:	0;
+	font-weight:	bold;
+}
+.sura_shortdetails>.ltwo>p{
+	display: block;
+	text-align: left;
+	font-weight: bold;
+	color: #806F4D;
+	font-family: tbangla;
+	float: left;
+	overflow: hidden;
+}
+.sura_shortdetails>.lone>.left_ayas{
+	background:url('../data/icon/ayah.png')no-repeat center;
+	background-size:47px;
+}
+.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+	margin: auto;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	color: #B19B6E;
+	text-shadow: 0px 0px 1px #FFF;
+}
+.sura_shortdetails>.ltwo{
+	background-color: #F4E9D0;
+	right:	50px;
+}
+.sura_shortdetails>.lthree>.delete_btn{
+	background:	url('../data/icon/del.png') no-repeat center;
+	background-size:	22px;
+	background-color: #E7DCBE;
+}
+.list{
+	display:	none;
+}
+.sura_shortdetails>.lthree{
+	right:	0;
+}
+.sura_title,	.sura_shortdetails,	.sura_title>.lone,	.sura_title>.ltwo,	.sura_shortdetails>.lone,	.sura_shortdetails>.ltwo,	.sura_shortdetails>.lthree,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lthree>.delete_btn{
+	height:	40px;
+}
+.sura_title>.lone,	.sura_shortdetails>.lone,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number,	.sura_shortdetails>.lthree>.delete_btn,	.sura_shortdetails>.lthree{
+	width:	50px;
+}
+.sura_title,	.sura_shortdetails,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+	line-height:	40px;
+}
+@media only screen and (min-width: 360px) {
+	body{
+		padding-top:	61px;
+	}
+	#turan{
+		top:	61px;
+	}
+	.sura_shortdetails>.lone>.left_ayas{
+		background-size:	54px;
+	}
+	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+		font-size:	12px;
+	}
+	.sura_shortdetails>.ltwo{
+		left:	55px;
+		right:	55px;
+	}
+	.sura_shortdetails>.ltwo>p,	.sura_title>.ltwo{
+		font-size:	18px;
+	}
+	.sura_title,	.sura_shortdetails,	.sura_title>.lone,	.sura_title>.ltwo,	.sura_shortdetails>.lone,	.sura_shortdetails>.ltwo,	.sura_shortdetails>.lthree,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lthree>.delete_btn{
+		height:	45px;
+	}
+	.sura_title>.lone,	.sura_shortdetails>.lone,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number,	.sura_shortdetails>.lthree>.delete_btn,	.sura_shortdetails>.lthree{
+		width:	55px;
+	}
+	.sura_title,	.sura_shortdetails,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+		line-height:	45px;
+	}
+}
+@media only screen and (min-width: 480px) {
+	body{
+		padding-top:	66px;
+	}
+	#turan{
+		top:	66px;
+	}
+	.sura_shortdetails>.lone>.left_ayas{
+		background-size:	56px;
+	}
+	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+		font-size:	12px;
+	}
+	.sura_shortdetails>.ltwo{
+		left:	60px;
+		right:	60px;
+	}
+	.sura_shortdetails>.ltwo>p,	.sura_title>.ltwo{
+		font-size:	22px;
+	}
+	.sura_title,	.sura_shortdetails,	.sura_title>.lone,	.sura_title>.ltwo,	.sura_shortdetails>.lone,	.sura_shortdetails>.ltwo,	.sura_shortdetails>.lthree,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lthree>.delete_btn{
+		height:	50px;
+	}
+	.sura_title>.lone,	.sura_shortdetails>.lone,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number,	.sura_shortdetails>.lthree>.delete_btn,	.sura_shortdetails>.lthree{
+		width:	60px;
+	}
+	.sura_title,	.sura_shortdetails,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+		line-height:	50px;
+	}
+}
+@media only screen and (min-width: 560px) {
+	body{
+		padding-top:	71px;
+	}
+	#turan{
+		top:	71px;
+	}
+	.sura_shortdetails>.lone>.left_ayas{
+		background-size:	58px;
+	}
+	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+		font-size:	13px;
+	}
+	.sura_shortdetails>.ltwo{
+		left:	65px;
+		right:	65px;
+	}
+	.sura_shortdetails>.ltwo>p,	.sura_title>.ltwo{
+		font-size:	26px;
+	}
+	.sura_title,	.sura_shortdetails,	.sura_title>.lone,	.sura_title>.ltwo,	.sura_shortdetails>.lone,	.sura_shortdetails>.ltwo,	.sura_shortdetails>.lthree,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lthree>.delete_btn{
+		height:	55px;
+	}
+	.sura_title>.lone,	.sura_shortdetails>.lone,	.sura_shortdetails>.lone>.left_ayas,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number,	.sura_shortdetails>.lthree>.delete_btn,	.sura_shortdetails>.lthree{
+		width:	65px;
+	}
+	.sura_title,	.sura_shortdetails,	.sura_shortdetails>.ltwo>p,	.sura_shortdetails>.lone>.left_ayas>.left_ayas_number{
+		line-height:	55px;
+	}
+}

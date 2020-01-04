@@ -1,0 +1,15 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body{margin:0;font-family:arial;background-color:#049a70;}
+* {
+     user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+a{text-decoration:none;color:gray;}
+::selection { background: transparent;color:inherit; }
+::-moz-selection { background: transparent;color:inherit; }
+h1,h2,h3,h4,h5,h6,p{margin:auto;}
+#wrapper{margin:auto;text-align:center;display:block;width:100%;}
+

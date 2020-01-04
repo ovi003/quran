@@ -1,0 +1,70 @@
+<html>
+	
+	<head>
+	
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<link href="layout/margin.css" rel="stylesheet" type="text/css">
+		<link href="layout/default.css" rel="stylesheet" type="text/css">
+		<link href="layout/bookmark.css" rel="stylesheet" type="text/css">
+		<link href="layout/header.css" rel="stylesheet" type="text/css">
+		<link href="layout/font.css" rel="stylesheet" type="text/css">
+		<link href="layout/font_size.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="java/bookmark.js"></script>
+		<script type="text/javascript" src="java/menu.js"></script>
+		<script type="text/javascript" src="java/names.js"></script>
+		<script type="text/javascript" src="java/loadxmldoc.js"></script>
+		
+		
+	</head>
+	
+	<body>
+		
+		<div id="header">
+			<div id="back_btn" class="btn back"></div>
+			<h4 class="title">Bookmarks</h4>
+			<div id="nav">
+				<div id="menu_btn" class="btn menu" ></div>
+				<div id="favclear" class="btn_clear">Clear</div>
+			</div>
+			
+		</div>
+		
+		<div id="wrapper">
+			
+		</div>
+		
+		<div id="menu"></div>
+		<div id="menu_body">
+			<ul>
+				<li id="setting_btn">Setting</li>
+				<li id="about_btn">About</li>
+				<li id="rateapp_btn">Rate App</li>
+				<li  id="share_btn">Share</li>
+			</ul>
+		</div>
+		
+		<div id="dialog_confirm">
+			<table>
+				<tr>
+					<td>	
+						<div id="dialog_overlay"></div>
+						<div id="confirm_box">
+							<div class="box_header"></div>
+							<div class="box_content">Are you sure?</div>
+							<div class="box_footer">
+								<div id="cyes" class="yes">Yes</div>
+								<div id="cno" class="no">No</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="java/default.js"></script>
+	</body>
+	
+</html>

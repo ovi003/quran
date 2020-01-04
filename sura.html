@@ -1,0 +1,77 @@
+<html>
+	
+	<head>
+	
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<link href="layout/margin.css" rel="stylesheet" type="text/css">
+		<link href="layout/default.css" rel="stylesheet" type="text/css">
+		<link href="layout/sura.css" rel="stylesheet" type="text/css">
+		<link href="layout/header.css" rel="stylesheet" type="text/css">
+		<link href="layout/font.css" rel="stylesheet" type="text/css">
+		<link href="layout/font_size.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="java/sura.js"></script>
+		<script type="text/javascript" src="java/menu.js"></script>
+		<script type="text/javascript" src="java/names.js"></script>
+		<script type="text/javascript" src="java/loadxmldoc.js"></script>
+		
+		
+	</head>
+	
+	<body>
+		<div id="header">
+			<div id="back_btn" class="btn back"></div>
+			<div id="nav">
+				<div id="menu_btn" class="btn menu" ></div>
+			</div>
+			
+		</div>
+		<div id="sub_header">
+			<table>
+				<tr>
+					<td id="sub_header_left"><div id="sub_header_left_btn"><div id="sub_header_sura_number"></div></div></td>
+					<td id="sub_header_center"><p id="sub_header_center_suraname"></p></td>
+					<td id="sub_header_right"><div id="sub_header_right_btn"><div id="sub_header_ayas_number"></div></div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="wrapper">
+		
+			<img src="data/icon/bismillah.png" id="bismillah" style="margin:auto;display:block;width:220px;padding:10px;background-color:white;"/>
+			
+		</div>
+		
+		<div id="menu"></div>
+		<div id="menu_body">
+			<ul>
+				<li id="setting_btn">Setting</li>
+				<li id="about_btn">About</li>
+				<li id="rateapp_btn">Rate App</li>
+				<li  id="share_btn">Share</li>
+			</ul>
+		</div>
+				
+		<div id="hold_overlay"></div>
+		<div id="hold_menu">
+			<h3 id="selected_ayas" class="title"></h3>
+			<div id="nav">
+				<div id="b_add" class="btn add" onclick="addbookmarks();"></div>
+				<div id="b_remove" class="btn remove" onclick="removebookmarks();"></div>
+			</div>
+		</div>
+		<div id="loading-popup">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+				<tr>
+					<td class="please_wait_center">		
+						<div class="blink"><p class="event">Please Wait...</p></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- <script type="text/javascript" src="cordova.js"></script> -->
+		<!-- <script type="text/javascript" src="java/default.js"></script> -->
+	</body>
+	
+</html>

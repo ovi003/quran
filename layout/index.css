@@ -1,0 +1,244 @@
+body{
+	padding-top:	51px;
+}
+@media only screen and (min-width: 360px) {
+	body{
+		padding-top:	61px;
+	}
+}
+@media only screen and (min-width: 480px) {
+	body{
+		padding-top:	66px;
+	}
+}
+@media only screen and (min-width: 560px) {
+	body{
+		padding-top:	71px;
+	}
+}
+#header>.logo{
+	height:	50px;
+	border:	8px solid transparent;
+	float:	left;
+}
+#header>#nav>.resume{
+		background:	url('../data/icon/resume.png') no-repeat center;
+		background-size:	20px;
+}
+#header>#nav>.bookmarks{
+		background:	url('../data/icon/bookmarks.png') no-repeat center;
+		background-size:	17px;
+}
+#header>#nav>.fav{
+		background:	url('../data/icon/fav_added.png') no-repeat center;
+		background-size:	20px;
+}
+
+@media only screen and (min-width: 360px) {
+	#header{
+		height:	61px;
+	}
+	#header>.logo{
+		height:	60px;
+	}
+}
+
+#wrapper>table{
+	padding:	0;
+	border-spacing:	0;
+	width:	100%:
+}
+#wrapper>table .para{
+	width:	40px;
+}
+#wrapper>table .vfour{
+	position:	fixed;
+	top:	51px;
+	left:	0;
+	right:	40px;
+	bottom:	0;
+	overflow-y:	scroll;
+}
+#wrapper>table .lone{
+	position:	absolute;
+	height:	40px;
+	width:	40px;
+	background:	url('../data/icon/shadow.png') repeat-y right;
+	background-color:	#049A70;
+	float:	left;
+}
+#wrapper>table .lone .arrow{
+	height:	40px;
+	width:	40px;
+	background:	url('../data/icon/left_arrow.png') no-repeat center;
+	background-size:	30px;
+}
+#wrapper>table .ltwo{
+	position:	absolute;
+	left:	40px;
+	right:	80px;
+	height:	40px;
+	padding:	0 7px;
+	background-color:	#F4E9D0;
+}
+#wrapper>table .lthree{
+	position:	absolute;
+	right:	40px;
+	height:	40px;
+	width:	40px;
+	background-color:	#E7DCBE;
+}
+#wrapper>table .lthree .fav{
+	height:	40px;
+	width:	40px;
+	background:	url('../data/icon/fav.png') no-repeat center;
+	background-size:	18px;
+}
+#wrapper>table .lthree .fav_added{
+	height:	40px;
+	width:	40px;
+	background:	url('../data/icon/fav_added.png') no-repeat center;
+	background-size:	18px;
+}
+#wrapper>table .lfour{
+	position:	absolute;
+	right:	0;
+	height:	40px;
+	width:	40px;
+	background-color:	#F4E9D0;
+	text-align:	center;
+}
+#wrapper>table .lfive{
+	position:	fixed;
+	top:	51px;
+	right:	0;
+	bottom:	0;
+	overflow-y:	scroll;
+}
+#wrapper>table .lfive a,	#wrapper>table .lfour a,	#wrapper>table .ltwo a{
+	display:	block;
+	text-decoration:	none;
+	color:	black;
+}
+
+#wrapper>table .list{
+	line-height:	40px;
+	height:	40px;
+}
+#wrapper>table .lpara{
+	width:	40px;
+	text-align:	center;
+	font-weight:	bold;
+	background-color:	#CEB98D;
+}
+
+#wrapper>table .ltwo a,	#wrapper>table .lfive a{
+	font-family:	bangla;
+}
+
+.font_style_name,	.font_style_para,	.lfour{
+	font-size:	18px;
+	font-weight:	bold;
+}
+
+@media only screen and (min-width: 360px) {
+	#header>.logo{
+		height:	60px;
+	}
+	#wrapper>table .lfive, #wrapper>table .vfour{
+		top:	61px;
+	}
+	#wrapper>table .vfour{
+		right:	50px;
+	}
+	#wrapper>table .ltwo{
+		left:	50px;
+		right:	100px;
+	}
+	#wrapper>table .lthree{
+		right:	50px;
+	}
+	#wrapper>table .list,	#wrapper>table .lone,	#wrapper>table .lone .arrow,	#wrapper>table .ltwo,	#wrapper>table .lthree,	#wrapper>table .lthree .fav,	#wrapper>table .lthree .fav_added,	#wrapper>table .lfour{
+		line-height:	50px;
+		height:	50px;
+	}
+	#wrapper>table .lpara,	#wrapper>table .lone,	#wrapper>table .lone .arrow, #wrapper>table .lthree,	#wrapper>table .lthree .fav,	#wrapper>table .lthree .fav_added,	#wrapper>table .lfour{
+		width:	50px;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	#wrapper>table .ltwo a{
+		padding:	0 10px;
+	}
+	.font_style_name,	.font_style_para,	.lfour{
+		font-size:	20px;
+		font-weight:	bold;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	#header>.logo{
+		height:	65px;
+	}
+	#wrapper>table .lfive, #wrapper>table .vfour{
+		top:	66px;
+	}
+	#wrapper>table .vfour{
+		right:	55px;
+	}
+	#wrapper>table .ltwo{
+		left:	55px;
+		right:	110px;
+	}
+	#wrapper>table .lthree{
+		right:	55px;
+	}
+	#wrapper>table .list,	#wrapper>table .lone,	#wrapper>table .lone .arrow,	#wrapper>table .ltwo,	#wrapper>table .lthree,	#wrapper>table .lthree .fav,	#wrapper>table .lthree .fav_added,	#wrapper>table .lfour{
+		line-height:	55px;
+		height:	55px;
+	}
+	#wrapper>table .lpara,	#wrapper>table .lone,	#wrapper>table .lone .arrow, #wrapper>table .lthree,	#wrapper>table .lthree .fav,	#wrapper>table .lthree .fav_added,	#wrapper>table .lfour{
+		width:	55px;
+	}
+	.font_style_name,	.font_style_para,	.lfour{
+		font-size:	26px;
+		font-weight:	bold;
+	}
+}
+
+@media only screen and (min-width: 560px) {
+	#header>.logo{
+		height:	70px;
+	}
+	#wrapper>table .lfive, #wrapper>table .vfour{
+		top:	71px;
+	}
+	#wrapper>table .vfour{
+		right:	60px;
+	}
+	#wrapper>table .ltwo{
+		left:	60px;
+		right:	110px;
+	}
+	#wrapper>table .lthree{
+		right:	60px;
+	}
+	#wrapper>table .list,	#wrapper>table .lone,	#wrapper>table .lone .arrow,	#wrapper>table .ltwo,	#wrapper>table .lthree,	#wrapper>table .lthree .fav,	#wrapper>table .lthree .fav_added,	#wrapper>table .lfour{
+		line-height:	60px;
+		height:	60px;
+	}
+	#wrapper>table .lpara,	#wrapper>table .lone,	#wrapper>table .lone .arrow, #wrapper>table .lthree,	#wrapper>table .lthree .fav,	#wrapper>table .lthree .fav_added,	#wrapper>table .lfour{
+		width:	60px;
+	}
+	.font_style_name,	.font_style_para,	.lfour{
+		font-size:	30px;
+		font-weight:	bold;
+	}
+}
+
+@media only screen and (min-width: 620px) {
+	#wrapper>table .ltwo a{
+		padding:	0 20px;
+	}
+}

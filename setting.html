@@ -1,0 +1,100 @@
+<html>
+	
+	<head>
+	
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<link href="layout/margin.css" rel="stylesheet" type="text/css">
+		<link href="layout/default.css" rel="stylesheet" type="text/css">
+		<link href="layout/setting.css" rel="stylesheet" type="text/css">
+		<link href="layout/header.css" rel="stylesheet" type="text/css">
+		<link href="layout/font.css" rel="stylesheet" type="text/css">
+		<link href="layout/font_size.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="java/setting.js"></script>
+		<script type="text/javascript" src="java/menu.js"></script>
+		<script type="text/javascript" src="java/alarm.js"></script>
+		
+	</head>
+	
+	<body>
+		
+		
+		
+		<div id="header">
+			<div id="back_btn" class="btn back"></div>
+			<h4 class="title">Setting</h4>
+			<div id="nav">
+				
+			</div>
+			
+		</div>
+		
+		<div id="wrapper">
+			<div id="turan">
+				<h3>Reminder</h3>
+				<hr>
+				<dl><dd><input id="time" placeholder="Time" type="time" name="time" value="06:30" /></dd></dl>
+				<div class="data_clear_btn" onclick="showTime()">Set Time</div>
+				<br>
+				
+				<h3>Translation</h3>
+				<hr>
+				<dl><dd><input type="checkbox" id="c1" name="cc" checked/><label for="c1"><span></span>Transliteration</label></dd></dl>
+				<dl><dd><input type="checkbox" id="c2" name="cc" checked/><label for="c2"><span></span>Bangla</label></dd></dl>
+				
+				
+				<h3>Reset Application Data</h3>
+				<hr>
+				<dl><dd><input type="checkbox" id="c3" name="cc" checked/><label for="c3"><span></span>Favorite</label></dd></dl>
+				<dl><dd><input type="checkbox" id="c4" name="cc" checked/><label for="c4"><span></span>Bookmarks</label></dd></dl>
+				<dl><dd><input type="checkbox" id="c5" name="cc" checked/><label for="c5"><span></span>Resume</label></dd></dl>
+				<dl><dd><input type="checkbox" id="c6" name="cc" checked/><label for="c6"><span></span>Translation</label></dd></dl>
+				<div id="data_clear_btn" class="data_clear_btn">Clear</div>
+				<br>
+			</div>
+		</div>
+		
+		<div id="menu"></div>
+		<div id="menu_body">
+			<ul>
+				<li id="setting_btn">Setting</li>
+				<li id="about_btn">About</li>
+				<li id="rateapp_btn">Rate App</li>
+				<li  id="share_btn">Share</li>
+			</ul>
+		</div>
+		
+		<div id="dialog_confirm">
+			<table>
+				<tr>
+					<td>	
+						<div id="dialog_overlay"></div>
+						<div id="confirm_box">
+							<div class="box_header"></div>
+							<div class="box_content">Are you sure?</div>
+							<div class="box_footer">
+								<div id="cyes" class="yes">Yes</div>
+								<div id="cno" class="no">No</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="java/default.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('deviceready', function () {
+
+                cordova.plugins.notification.local.on('schedule', function (notification) {
+                    console.log('onschedule', arguments);
+                    // showToast('scheduled: ' + notification.id);
+                });
+            }, false);
+        </script>
+
+	</body>
+	
+</html>

@@ -1,0 +1,31 @@
+*{
+	box-sizing:	border-box;
+	-webkit-tap-highlight-color:	rgba(0,0,0,0);
+}
+
+* {
+     user-select:	none;
+    -khtml-user-select:	none;
+    -o-user-select:	none;
+    -moz-user-select:	-moz-none;
+    -webkit-user-select:	none;
+}
+
+::selection{
+	background:	transparent;
+	color:	inherit;
+}
+::-moz-selection{
+	background:	transparent;
+	color:	inherit;
+}
+
+body{
+	background-color:	#049a70;
+}
+ul,	li{
+	padding:	0;
+	margin:	0;
+	border:	0;
+	list-style:	none;
+}
